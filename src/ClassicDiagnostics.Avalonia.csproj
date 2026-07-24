@@ -32,45 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\Elements\ElementsTreeView.axaml.cs">
-      <DependentUpon>ElementsTreeView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Styles\ElementLayoutView.axaml.cs">
-      <DependentUpon>ElementLayoutView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\ContainerPropertiesColumnView.axaml.cs">
-      <DependentUpon>ContainerPropertiesColumnView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\PropertyColumnChromeView.axaml.cs">
-      <DependentUpon>PropertyColumnChromeView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\PropertyColumnsView.axaml.cs">
-      <DependentUpon>PropertyColumnsView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\PropertyDrillInView.axaml.cs">
-      <DependentUpon>PropertyDrillInView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\PropertyExplorerView.axaml.cs">
-      <DependentUpon>PropertyExplorerView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Properties\ObjectPropertiesColumnView.axaml.cs">
-      <DependentUpon>ObjectPropertiesColumnView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Elements\Styles\ElementStylesView.axaml.cs">
-      <DependentUpon>ElementStylesView.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalFiles Include="Views\Controls\BrushEditor.axaml" />
     <AdditionalFiles Include="Views\Controls\FilterTextBox.axaml" />
     <AdditionalFiles Include="Views\Controls\ThicknessEditor.axaml" />

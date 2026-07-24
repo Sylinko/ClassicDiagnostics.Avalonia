@@ -1,4 +1,5 @@
 using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
 using ClassicDiagnostics.Avalonia.Elements;
 
@@ -6,9 +7,12 @@ namespace ClassicDiagnostics.Avalonia.Views.Elements;
 
 internal partial class ElementsPage : ReactiveUserControl<ElementsPageViewModel>
 {
+    private readonly TextBox? _findTextBox;
+
     public ElementsPage(ElementsPageViewModel viewModel) : base(viewModel)
     {
-        InitializeComponent();
+        AvaloniaXamlLoader.Load(this);
+        _findTextBox = this.FindNameScope()?.Find<TextBox>("FindTextBox");
         AddHandler(KeyDownEvent, HandleTargetKeyDown, RoutingStrategies.Tunnel);
     }
 
@@ -34,8 +38,8 @@ internal partial class ElementsPage : ReactiveUserControl<ElementsPageViewModel>
                 Dispatcher.UIThread.Post(
                     () =>
                     {
-                        FindTextBox.Focus();
-                        FindTextBox.SelectAll();
+                        _findTextBox?.Focus();
+                        _findTextBox?.SelectAll();
                     },
                     DispatcherPriority.Background);
             }
